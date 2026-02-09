@@ -1,0 +1,126 @@
+/* page */
+.trailerone-page {
+  min-height: 100%;
+  padding: 110px 16px 28px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+/* swipe gallery */
+.trailerone-gallery {
+  width: min(950px, 100%);
+  margin: 0 auto 18px;
+
+  display: flex;
+  gap: 14px;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  padding-bottom: 10px;
+}
+
+/* hide scrollbar (optional) */
+.trailerone-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+.trailerone-gallery::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 99px;
+}
+
+.trailerone-slide {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  margin: 0;
+
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.35);
+}
+
+.trailerone-img {
+  width: 100%;
+  height: clamp(320px, 60vh, 620px);
+  object-fit: cover;
+  display: block;
+}
+
+/* content */
+.trailerone-content {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  padding: 16px 8px 6px;
+}
+
+.trailerone-title {
+  margin: 10px 0 10px;
+  font-size: clamp(24px, 3.2vw, 38px);
+  font-weight: 800;
+}
+
+.trailerone-desc {
+  margin: 0 0 14px;
+  font-size: clamp(14px, 1.8vw, 18px);
+  color: rgba(255,255,255,0.9);
+  line-height: 1.5;
+}
+
+.trailerone-details {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: rgba(255,255,255,0.92);
+}
+
+/* footer button */
+.trailerone-footer {
+  width: min(900px, 100%);
+  margin: 22px auto 0;
+  padding: 0 8px;
+}
+
+.trailerone-bookbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 52px;
+  border-radius: 12px;
+
+  background: rgba(70, 0, 0, 0.9);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.trailerone-bookbtn:hover {
+  filter: brightness(1.05);
+}
+.trailerone-pricing {
+    margin: 18px auto 0;              /* centers it */
+    padding: 14px 18px;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 700;
+    color: #fff;
+  
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+  
+    width: max-content;               /* shrink to text */
+    text-align: center;
+  }
+  
+  
+
+/* desktop: show more than one image at a time */
+@media (min-width: 900px) {
+  .trailerone-slide {
+    flex-basis: 48%;
+  }
+}

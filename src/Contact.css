@@ -1,0 +1,137 @@
+/* Make sure Nunito is loaded in index.html OR import it in main.css */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  .contact-page {
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+  
+    background-image: url("/HomeTrailer2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: grid;
+    place-items: center;
+    padding: 48px 18px;
+  
+    font-family: "Nunito", sans-serif;
+  }
+  
+  /* subtle dark overlay so text is readable (NOT a box) */
+  .contact-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.25)
+    );
+  }
+  
+  .contact-hero {
+    transform: translateY(-155px);
+    position: relative; /* keeps it above overlay */
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .contact-title {
+    margin: 0;
+    font-size: clamp(26px, 3.8vw, 46px);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+  }
+  
+  .contact-subtitle {
+    margin: 10px 0 28px;
+    font-size: clamp(14px, 1.8vw, 18px);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 6px 22px rgba(0, 0, 0, 0.25);
+  }
+  
+  .contact-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+  
+  /* pill buttons */
+  .contact-pill {
+    width: min(620px, 92vw);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  
+    padding: 16px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+  
+    color: #fff;
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 22px);
+  
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  
+    transform: translateY(0);
+    transition: transform 150ms ease, filter 150ms ease;
+  }
+  
+  .contact-pill:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+  }
+  
+  /* colors inspired by your mock */
+  .contact-pill--phone {
+    background: rgba(90, 20, 20, 0.75); /* dark red, see-through */
+}
+  
+  .contact-pill--email {
+    background: rgba(9, 6, 4, 0.85);
+  }
+  
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    flex: 0 0 auto;
+  }
+  
+  .icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+  
+  .contact-pill-text {
+    line-height: 1.1;
+    word-break: break-word;
+  }
+  
+  /* desktop: pills can be a tiny bit tighter */
+  @media (min-width: 900px) {
+    .contact-actions {
+      gap: 16px;
+    }
+  }
+  

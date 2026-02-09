@@ -1,7 +1,6 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-import logo from "/Users/gabriellahasaj/rentalapp/src/66A99E0B-6D2B-4BE5-9957-8264062C6A21.png"; // adjust path
 
 export default function Home() {
   return (

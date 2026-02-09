@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getBookedDates, createBooking } from "./bookingapi";
+import { getBookedDates, createBooking } from "./bookingApi";
 import "./Booking.css";
 
 function toISODateLocal(d) {

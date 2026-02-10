@@ -219,11 +219,11 @@ export default function Booking() {
         <h2 className="booking-title">
           Book a {normalizedTrailerType === "enclosed" ? "Enclosed" : "Open"} Trailer
         </h2>
-        
-        {loading ? <p className="booking-loading">Loading availability…</p> : null}
         <p className="booking-deposit-note">
   When booking, there is a <strong>$300 mandatory refundable deposit</strong>.
 </p>
+        {loading ? <p className="booking-loading">Loading availability…</p> : null}
+       
         {status.message ? (
           <p className={`booking-status ${status.type ? `is-${status.type}` : ""}`}>
             {status.message}

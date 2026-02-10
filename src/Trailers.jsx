@@ -11,13 +11,12 @@ export default function Trailers() {
 
       <div className="trailers-grid">
         <Link to="/trailerone" className="trailer-card">
-          <img
-            src="/Trailer1.jpg"
-            alt="Closed Trailer"
-            className="trailer-img"
-            loading="lazy"
-            
-          />
+        <img
+  src={`${import.meta.env.BASE_URL}Trailer1.jpg`}
+  alt="Closed Trailer"
+  className="trailer-img"
+  loading="lazy"
+/>
           <div className="trailer-overlay" />
           <div className="trailer-text">
             <div className="trailer-name">Enclosed Trailer</div>
@@ -26,12 +25,12 @@ export default function Trailers() {
         </Link>
 
        <Link to="/trailertwo" className="trailer-card">
-          <img
-            src="/Trailer21.jpeg"
-            alt="Trailer 2"
-            className="trailer-img"
-            loading="lazy"
-          />
+       <img
+  src={`${import.meta.env.BASE_URL}Trailer21.jpeg`}
+  alt="Trailer 2"
+  className="trailer-img"
+  loading="lazy"
+/>
           <div className="trailer-overlay" />
           <div className="trailer-text">
             <div className="trailer-name">Open Trailer</div>

@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwk53soOtOWOl9NyjCWSqQvpwA4DRw7JhuXGQe9402JvN7yJqJR5chk0T1QLm10XXav/exec"; // .../exec
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzucQT51LnoThEFsImrQEpO91V5QUsMBAbaLDep_oGlHPTHi3tjGySJIkgUyAZooz4G/exec"; // .../exec
 
 
 async function postJson(body) {

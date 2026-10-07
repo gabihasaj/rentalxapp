@@ -54,7 +54,7 @@ This Blackout Edition Discovery Trailer is tough, clean, and ready to go.
 
       </section>
       <div className="trailerone-pricing">
-<strong>$70 / day</strong> &nbsp;·&nbsp; <strong>$490 / week</strong>
+<strong>$115 / day</strong> &nbsp;·&nbsp; <strong>$730 / week</strong>
 </div>
       {/* Bottom button */}
       <footer className="trailerone-footer">

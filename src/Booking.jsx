@@ -24,8 +24,8 @@ function rangeHasBookedDay(startDate, endDate, bookedSet) {
 
 /* ===== Pricing (both trailers) ===== */
 const RATES = {
-  enclosed: { day: 70, week: 490 },
-  open: { day: 60, week: 400 },
+  enclosed: { day: 115, week: 730 },
+  open: { day: 85, week: 530 },
 };
 
 function daysBetweenInclusive(startISO, endISO) {

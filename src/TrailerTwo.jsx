@@ -54,7 +54,7 @@ export default function TrailerTwo() {
 
       </section>
       <div className="trailerone-pricing">
- <strong>$60 / day</strong> &nbsp;·&nbsp; <strong>$490 / week</strong>
+ <strong>$85 / day</strong> &nbsp;·&nbsp; <strong>$530 / week</strong>
 </div>
       {/* Bottom button */}
       <footer className="trailerone-footer">
